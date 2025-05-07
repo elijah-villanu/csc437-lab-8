@@ -1,0 +1,123 @@
+body {
+  background-color: var(--color-background-body);
+  color: var(--color-text-body);
+  font-family: "Space Mono", sans-serif;
+  margin: 0rem;
+}
+
+a {
+  color: var(--color-link);
+}
+
+h1 {
+  color: var(--color-header);
+  margin: 0rem;
+  font-family: "Baskervville SC", sans-serif;
+  padding: 2rem;
+  font-size: 3rem;
+}
+h2 {
+  color: var(--color-header);
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  font-family: "Baskervville SC", sans-serif;
+}
+header {
+  background-color: var(--color-background-header);
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: grid;
+  grid-template-rows: 2fr;
+  grid-template-columns: 1fr 1fr;
+}
+nav .buttons-container {
+  grid-column-start: 2;
+  place-self: center;
+  display: flex;
+  align-items: center;
+}
+nav .button-div {
+  padding: 2rem;
+}
+.page-list {
+  grid-row-start: 2;
+  display: none;
+  list-style-type: none;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (min-width: 800px) {
+  .page-list {
+    display: flex;
+    list-style-type: none;
+    gap: 5rem;
+    flex-direction: row-reverse;
+  }
+  button {
+    display: none;
+  }
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+.inner-body {
+  margin: 2rem;
+  display: grid;
+  grid-template-rows: 0.3fr 1fr 1fr;
+  grid-template-columns: 0.75fr 3fr;
+  gap: 0.5rem;
+}
+.welcome {
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-column: span 2;
+}
+
+.profile-img {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+
+.set-lists {
+  grid-row-start: 2;
+  grid-column-start: 2;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.contact-info {
+  max-width: 20rem;
+  width: 100%;
+}
+.contact-info dl {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin-top: 1.3rem;
+  grid-template-columns: 0.3fr 0.2fr;
+  line-height: 1.3rem;
+  width: 100%;
+}
+
+.contact-info dl dd {
+  text-wrap: wrap;
+}
+.skill-set ul {
+  line-height: 2rem;
+}
+.soundtrack {
+  margin: 2rem;
+}
+.playlist {
+  margin: 2rem;
+}

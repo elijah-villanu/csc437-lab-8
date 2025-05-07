@@ -1,0 +1,24 @@
+{
+  "name": "csc437-lab-8",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/elijah-villanu/csc437-lab-8#readme",
+  "bugs": {
+    "url": "https://github.com/elijah-villanu/csc437-lab-8/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elijah-villanu/csc437-lab-8.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 3333",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
+  }
+}

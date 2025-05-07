@@ -1,0 +1,14 @@
+:root {
+  --color-header: rgb(0, 0, 0);
+  --color-link: rgb(120, 20, 15);
+  --color-background-header:#ebb7ac;
+  --color-text-body: rgb(30, 62, 62);
+  --color-background-body:#d3d3d3;
+}
+body.dark-mode{
+  --color-header: rgb(210, 210, 210);
+  --color-link: rgb(188, 244, 234);
+  --color-background-header:#121212;
+  --color-text-body: #e0e0e0;
+  --color-background-body:#444444;
+}
